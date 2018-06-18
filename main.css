@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro:400,400i');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.35;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0 auto;
+    padding: 1.5em 2em 2.5em 2em;
+}
+p {
+    margin-bottom: 0.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+a {
+    color: #474167;
+    text-decoration: none;
+}
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+/* if the browser knows @media hover, then remove underline on "hover" */
+@media not (hover: hover) {
+    a:hover {
+        text-decoration: none;
+    }
+}
+@media not print {
+    .printonly {
+        display: none;
+    }
+}
+@media print {
+    .noprint {
+        display: none;
+    }
+}
+
+img.circle {
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+img.main {
+    display: block;
+    margin: 0 auto 1em auto;
+    width: 12em;
+    height: 12em;
+}
+h1.main {
+    font-size: 2em;
+    margin: 0 auto 0.75em auto;
+    text-align: center;
+}
+.creativework {
+    font-style: italic;
+}
+small {
+    display: block;
+    margin-top: 2em;
+    font-size: 0.8em;
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        font-size: 30px;
+        max-width: 1228px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+    body {
+        font-size: 25px;
+        max-width: 1024px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media print {
+    body {
+        font-size: 12pt;
+    }
+    a {
+        color: inherit;
+    }
+    a:active {
+        text-decoration: none;
+    }
+}
